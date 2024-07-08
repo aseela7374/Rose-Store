@@ -41,12 +41,12 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size:large; 
+    font-size:larger; 
     text-decoration: none;
     color: #333;
 }
 nav ul li a:hover {
-font-size:larger; 
+background-color:white; 
 
 }
 
