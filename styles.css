@@ -125,6 +125,7 @@ footer {
 }
 /* اجعل الصور تصطف بشكل أفقي */
 .category{
+    margin:2em; 
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
