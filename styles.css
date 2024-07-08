@@ -136,8 +136,8 @@ footer {
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
 }
 /* تأثير التحرك عند النقر */
 .product img:hover {
@@ -145,17 +145,32 @@ footer {
 }
 
 /* تحسين استجابة الموقع للأجهزة المختلفة */
-@media (max-width: 1024px) {
-    .product {
-        flex: 1 1 calc(50% - 40px);
+/* الأنماط للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
-@media (max-width: 768px) {
-    .product {
-        flex: 1 1 100%;
+/* الأنماط للأجهزة الكبيرة */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
     }
 }
+
 .comments {
     margin-top: 50px;
 }
