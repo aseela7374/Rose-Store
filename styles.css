@@ -152,7 +152,7 @@ footer {
         align-items: flex-start;
     }
 
-    nav ul {
+    nav ul { display:block; 
         flex-direction: column;
         gap: 10px;
     }
